@@ -1,0 +1,12 @@
+<head>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCLp0myW9f_ybaS_CEkNgUVa55Rz4TlOKpw&usqp=CAU">
+</head>
+
+<!-- JavaScript File for Posts -->
+<% locals.jsfiles = ['javascript/home.js', 'javascript/posts-layout.js'] %> 
+
+<!-- Main Content -->
+<% locals.mainContent = include('home-content') %>
+
+<!-- Main Layout -->
+<%- include('layouts/main-layout', {pageTitle: 'Home'}) %>

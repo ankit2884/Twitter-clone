@@ -1,0 +1,16 @@
+<head>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCLp0myW9f_ybaS_CEkNgUVa55Rz4TlOKpw&usqp=CAU">
+</head>
+
+<!-- Post id for the post to be displayed -->
+<script>
+    const postId = '<%- locals.postId %>'
+</script>
+
+<% locals.mainContent = include('layouts/posts-layout') %> 
+
+<!-- JavaScript File for Posts -->
+<% locals.jsfiles = ['/javascript/posts-layout.js', '/javascript/postPage.js'] %> 
+
+<!-- Main Layout -->
+<%- include('layouts/main-layout') %>

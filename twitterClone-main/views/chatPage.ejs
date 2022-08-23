@@ -1,0 +1,14 @@
+<head>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCLp0myW9f_ybaS_CEkNgUVa55Rz4TlOKpw&usqp=CAU">
+</head>
+
+<script>
+    const chat = '<%- JSON.stringify(locals.chat) %>'
+</script>
+<% locals.mainContent = include('chatPage-content') %> 
+
+<!-- JavaScript File for Posts -->
+<% locals.jsfiles = ['/javascript/chatPage.js'] %> 
+
+<!-- Main Layout -->
+<%- include('layouts/main-layout') %>
